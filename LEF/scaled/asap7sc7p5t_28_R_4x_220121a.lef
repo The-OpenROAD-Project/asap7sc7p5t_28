@@ -17330,6 +17330,77 @@ MACRO TAPCELL_WITH_FILLER_ASAP7_75t_R
 END TAPCELL_WITH_FILLER_ASAP7_75t_R 
 
 
+MACRO TBUFx1_ASAP7_75t_R 
+  CLASS CORE ; 
+  ORIGIN 0 0 ; 
+  FOREIGN TBUFx1_ASAP7_75t_R 0 0 ; 
+  SIZE 2.376 BY 1.08 ; 
+  SYMMETRY X Y ; 
+  SITE asap7sc7p5t ; 
+  PIN A 
+    DIRECTION INPUT ; 
+    USE SIGNAL ; 
+    PORT 
+      LAYER M1 ; 
+        RECT 1.044 0.108 2.088 0.18 ; 
+        RECT 1.044 0.18 1.116 0.252 ; 
+        RECT 0.72 0.252 1.116 0.324 ; 
+        RECT 0.72 0.324 0.792 0.496 ; 
+        RECT 2.016 0.18 2.088 0.576 ; 
+    END 
+  END A 
+  PIN EN 
+    DIRECTION INPUT ; 
+    USE SIGNAL ; 
+    PORT 
+      LAYER M1 ; 
+        RECT 1.476 0.424 1.548 0.584 ; 
+        RECT 0.936 0.584 1.548 0.656 ; 
+    END 
+  END EN 
+  PIN VDD 
+    DIRECTION INOUT ; 
+    USE POWER ; 
+    SHAPE ABUTMENT ; 
+    PORT 
+      LAYER M1 ; 
+        RECT 0 1.044 2.376 1.116 ; 
+    END 
+  END VDD 
+  PIN VSS 
+    DIRECTION INOUT ; 
+    USE GROUND ; 
+    SHAPE ABUTMENT ; 
+    PORT 
+      LAYER M1 ; 
+        RECT 0 -0.036 2.376 0.036 ; 
+    END 
+  END VSS 
+  PIN Z 
+    DIRECTION OUTPUT ; 
+    USE SIGNAL ; 
+    PORT 
+      LAYER M1 ; 
+        RECT 0.072 0.252 0.144 0.576 ; 
+    END 
+  END Z 
+  OBS 
+    LAYER M1 ; 
+      RECT 0.288 0.108 0.9 0.18 ; 
+      RECT 0.288 0.18 0.36 0.9 ; 
+      RECT 0.288 0.9 1.116 0.972 ; 
+      RECT 0.504 0.504 0.576 0.756 ; 
+      RECT 0.504 0.756 1.332 0.828 ; 
+      RECT 1.26 0.828 1.332 0.9 ; 
+      RECT 2.232 0.584 2.304 0.9 ; 
+      RECT 1.26 0.9 2.304 0.972 ; 
+      RECT 1.26 0.252 1.872 0.324 ; 
+      RECT 1.26 0.324 1.332 0.424 ; 
+      RECT 1.152 0.424 1.332 0.496 ; 
+      RECT 1.8 0.324 1.872 0.496 ; 
+  END 
+END TBUFx1_ASAP7_75t_R 
+
 MACRO TIEHIx1_ASAP7_75t_R 
   CLASS CORE ; 
   ORIGIN 0 0 ; 
