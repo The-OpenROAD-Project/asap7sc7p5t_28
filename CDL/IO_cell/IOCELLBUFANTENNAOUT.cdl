@@ -1,8 +1,8 @@
 * SPICE NETLIST
 ***************************************
 .SUBCKT ANTENNA_ASAP7_75t_R VSS VDD A
-M0 A 6 A VSS nmos_rvt L=20n W=81.0n nfin=3
-M1 VDD 7 VDD VDD pmos_rvt L=20n W=81.0n nfin=3
+M0 A 6 A VSS nmos_rvt w=81.0n l=20n nfin=3
+M1 VDD 7 VDD VDD pmos_rvt w=81.0n l=20n nfin=3
 .ENDS
 ***************************************
 .SUBCKT DECAPx2_ASAP7_75t_R VSS VDD

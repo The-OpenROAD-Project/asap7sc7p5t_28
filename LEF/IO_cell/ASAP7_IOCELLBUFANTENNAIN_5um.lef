@@ -7,13 +7,15 @@
 # Command:         write_lef_abstract 
 # -------------------------------
 
+# 09-01-2026: Changed the CLASS from BLOCK to PAD
+
 VERSION 5.8 ;
 
 BUSBITCHARS "[]" ;
 DIVIDERCHAR "/" ;
 
 MACRO IOCELLBUFANTENNAIN
-  CLASS BLOCK ;
+  CLASS PAD ;
   SIZE 4.896000 BY 4.968000 ;
   FOREIGN IOCELLBUFANTENNAIN 0.000000 0.000000 ;
   ORIGIN 0 0 ;

@@ -9,3 +9,5 @@ GUI:              (File → Save → GDS/OASIS)
 
 KLayout (v0.29.5) was used to manually modify the INVx1 standard cell from asap7sc7p5t_28_R_220121a_with.gds into an antenna cell, and the updated layout was saved as asap7sc7p5t_28_R_220121a_with_ANTENNA.gds.
 KLayout is an open-source layout viewer and editor (https://github.com/KLayout/klayout).
+
+09-01-2026: Changed the layer of 'in' to M2 and 'out' to Pad. Rerouted the standard cells with the edited pin layers. 
