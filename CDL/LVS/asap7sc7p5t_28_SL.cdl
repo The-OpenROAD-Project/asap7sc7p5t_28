@@ -3318,6 +3318,58 @@ MM22 clkb clkn VDD VDD pmos_slvt w=81.0n l=20n nfin=3
 MM25 QN SH VDD VDD pmos_slvt w=324.00n l=20n nfin=12
 .ENDS
 
+* --------------------------------------------------------------------------
+* TBUFx1_ASAP7_75t_SL below is a port of TBUF_X1 from the Nangate Open
+* Cell Library. Its licence requires the notice and statement reproduced here.
+*
+* Copyright (C) 2004-2010, Nangate Inc.  All rights reserved.
+*
+* Nangate Open Cell Library License, Version 1.0. February 20, 2008
+*
+* Permission is hereby granted, free of charge, to any person or
+* organization obtaining a copy of the Open Cell Library and accompanying
+* documentation (the "Library") covered by this license to use, reproduce,
+* display, distribute, execute, and transmit the Library, and to prepare
+* derivative works of the Library, and to permit third-parties to whom the
+* Library is furnished to do so, all subject to the following:
+*
+* The copyright notices in the Library and this entire statement, including
+* the above license grant, this restriction and the following disclaimer,
+* must be included in all copies of the Library, in whole or in part, and
+* all derivative works of the Library, unless such copies or derivative
+* works are solely in the form of machine-executable object code generated
+* by a source language processor. The library has been generated using a
+* non-optimized open PDK and is not suited for any commercial purpose.
+* Measuring or benchmarking the Library against any other library or
+* standard cell set is prohibited. Any meaningful library benchmarking must
+* be done in collaboration with Nangate or other providers of optimized and
+* production-ready PDKs.
+*
+* THE LIBRARY IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+* IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+* FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+* SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE LIBRARY BE LIABLE
+* FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR
+* OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE LIBRARY OR THE
+* USE OR OTHER DEALINGS IN THE LIBRARY.
+* --------------------------------------------------------------------------
+.SUBCKT TBUFx1_ASAP7_75t_SL A EN VDD VSS Z
+*.PININFO A:I EN:I VDD:P VSS:G Z:O
+*.EQN Z=A
+M0 VSS 1 Z VSS nmos_slvt w=81.0n l=20n nfin=3
+M1 5 A 2 VSS nmos_slvt w=54.0n l=20n nfin=2
+M2 VSS 3 5 VSS nmos_slvt w=54.0n l=20n nfin=2
+M3 VSS A 1 VSS nmos_slvt w=54.0n l=20n nfin=2
+M4 VSS EN 1 VSS nmos_slvt w=54.0n l=20n nfin=2
+M5 VSS EN 3 VSS nmos_slvt w=54.0n l=20n nfin=2
+M6 VDD 2 Z VDD pmos_slvt w=81.0n l=20n nfin=3
+M7 VDD A 2 VDD pmos_slvt w=54.0n l=20n nfin=2
+M8 2 3 VDD VDD pmos_slvt w=54.0n l=20n nfin=2
+M9 VDD A 4 VDD pmos_slvt w=54.0n l=20n nfin=2
+M10 4 EN 1 VDD pmos_slvt w=54.0n l=20n nfin=2
+M11 VDD EN 3 VDD pmos_slvt w=54.0n l=20n nfin=2
+.ENDS
+
 
 .SUBCKT TIEHIx1_ASAP7_75t_SL H VDD VSS
 MM1 H net7 VDD VDD pmos_slvt w=54.0n l=20n nfin=2
