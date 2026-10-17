@@ -141942,26 +141942,6 @@ cc_356 N_SE_15 N_4_28 0.0272832f $X=0.2315 $Y=0.081
 .ends
 *
 
-* Design:	TIEHIx1_ASAP7_75t_R
-* Created:	"Sat Jan 22 2022"
-* Vendor:	"Mentor Graphics Corporation"
-* Program:	"Calibre xACT 3D"
-* Version:	"v2017.4_19.14"
-* Corner Name: typical_27
-* Nominal Temperature: 25C
-* Circuit Temperature: 27C
-* 
-* Integrated TICER reduction is not enabled.
-* SHORT DELAY THRESHOLD: 2e-15
-* Fill Mode: NG
-* PEX REDUCE CC ABSOLUTE : 1
-* PEX REDUCE CC RELATIVE : 0.01
-* Delta transform mode : 344834
-
-* .include "TIEHIx1_ASAP7_75t_R.pex.sp.pex"
-
-* Start of included file TIEHIx1_ASAP7_75t_R.pex.sp.pex
-
 .subckt PM_TBUFx1_ASAP7_75t_R%1 2 7 14 18 22 23 26 34 39 41 46 48 vss
 c59 48 vss 3.51752e-19 $X=0.27 $Y=0.234
 c60 46 vss 6.31071e-19 $X=0.09 $Y=0.234
@@ -142895,6 +142875,26 @@ cc_237 N_3_M2_g N_5_M1_d 0.0134252f $X=0.459 $Y=0.054 $X2=0.503 $Y2=0.054
 .ends
 *
 *
+
+* Design:	TIEHIx1_ASAP7_75t_R
+* Created:	"Sat Jan 22 2022"
+* Vendor:	"Mentor Graphics Corporation"
+* Program:	"Calibre xACT 3D"
+* Version:	"v2017.4_19.14"
+* Corner Name: typical_27
+* Nominal Temperature: 25C
+* Circuit Temperature: 27C
+* 
+* Integrated TICER reduction is not enabled.
+* SHORT DELAY THRESHOLD: 2e-15
+* Fill Mode: NG
+* PEX REDUCE CC ABSOLUTE : 1
+* PEX REDUCE CC RELATIVE : 0.01
+* Delta transform mode : 344834
+
+* .include "TIEHIx1_ASAP7_75t_R.pex.sp.pex"
+
+* Start of included file TIEHIx1_ASAP7_75t_R.pex.sp.pex
 
 .subckt PM_TIEHIx1_ASAP7_75t_R%H vss 24 12 31 7 10 1 11 6
 c1 1 vss 0.00863021f $X=0.081 $Y=0.079
