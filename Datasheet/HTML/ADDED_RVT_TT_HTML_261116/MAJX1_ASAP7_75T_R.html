@@ -15,7 +15,7 @@
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4>
 <TR valign=middle><TH colspan=3><font size=3>INPUT</font></TH>
 <TH colspan=1><font size=3>OUTPUT</font></TH>
-<TR><Th>A</Th><Th>B</Th><Th>CI</Th><Th>CO</Th></TR>
+<TR><Th>A</Th><Th>B</Th><Th>C</Th><Th>Y</Th></TR>
 <TR><Th><font size=2>0</font></Th><Th><font size=2>0</font></Th><Th><font size=2>x</font></Th><Th><font size=2>0</font></Th></TR>
 <TR><Th><font size=2>0</font></Th><Th><font size=2>1</font></Th><Th><font size=2>0</font></Th><Th><font size=2>0</font></Th></TR>
 <TR><Th><font size=2>x</font></Th><Th><font size=2>1</font></Th><Th><font size=2>1</font></Th><Th><font size=2>1</font></Th></TR>
@@ -42,8 +42,8 @@
 <TR>
 <TH>A</TH>
 <TH>B</TH>
-<TH>CI</TH>
-<TH>CO</TH>
+<TH>C</TH>
+<TH>Y</TH>
 </TR>
 <TR><Th><font>MAJx1_ASAP7_75t_R</font></Th>
 <TD align=center>0.45548</TD>
@@ -69,25 +69,25 @@
 <FONT SIZE=+2><B>Delay Information</B></FONT>
 <BR>
 <BR>
-<FONT><B>Delay(ps) to CO rising :</B></FONT>
+<FONT><B>Delay(ps) to Y rising :</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Timing Arc(Dir)</TH>
 <TH colspan=3>Delay(ps)</TH></TR><TR><TH>First</TH><TH>Mid</TH><TH>Last</TH></TR>
 <BR>
 <TR><TH rowspan=3>MAJx1_ASAP7_75t_R</TH>
-<Th><font>A->CO (RR)</font></Th>
+<Th><font>A->Y (RR)</font></Th>
 <TD align=center>28.82390</TD>
 <TD align=center>63.10860</TD>
 <TD align=center>266.47000</TD>
 </TR>
 <TR>
-<Th><font>B->CO (RR)</font></Th>
+<Th><font>B->Y (RR)</font></Th>
 <TD align=center>34.65440</TD>
 <TD align=center>65.55070</TD>
 <TD align=center>259.42400</TD>
 </TR>
 <TR>
-<Th><font>CI->CO (RR)</font></Th>
+<Th><font>C->Y (RR)</font></Th>
 <TD align=center>30.43440</TD>
 <TD align=center>61.03260</TD>
 <TD align=center>253.40600</TD>
@@ -95,25 +95,25 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Delay(ps) to CO falling :</B></FONT>
+<FONT><B>Delay(ps) to Y falling :</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Timing Arc(Dir)</TH>
 <TH colspan=3>Delay(ps)</TH></TR><TR><TH>First</TH><TH>Mid</TH><TH>Last</TH></TR>
 <BR>
 <TR><TH rowspan=3>MAJx1_ASAP7_75t_R</TH>
-<Th><font>A->CO (FF)</font></Th>
+<Th><font>A->Y (FF)</font></Th>
 <TD align=center>32.88360</TD>
 <TD align=center>63.31810</TD>
 <TD align=center>236.53600</TD>
 </TR>
 <TR>
-<Th><font>B->CO (FF)</font></Th>
+<Th><font>B->Y (FF)</font></Th>
 <TD align=center>41.23790</TD>
 <TD align=center>71.01800</TD>
 <TD align=center>247.97900</TD>
 </TR>
 <TR>
-<Th><font>CI->CO (FF)</font></Th>
+<Th><font>C->Y (FF)</font></Th>
 <TD align=center>36.48350</TD>
 <TD align=center>69.37800</TD>
 <TD align=center>256.81800</TD>
@@ -125,90 +125,90 @@
 <FONT SIZE=+2><B>Power Information</B></FONT>
 <BR>
 <BR>
-<FONT><B>Internal switching power(fJ) to CO rising (conditional):</B></FONT>
+<FONT><B>Internal switching power(fJ) to Y rising (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Input</TH>
 <TH rowspan=2>When</TH>
 <TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=12>MAJx1_ASAP7_75t_R</TH>
 <Th><font>A</font></Th>
-<Th><font>(B * !CI)</font></Th>
+<Th><font>(B * !C)</font></Th>
 <TD align=center>0.11868</TD>
 <TD align=center>0.12360</TD>
 <TD align=center>0.16022</TD>
 </TR>
 <TR>
 <Th><font>A</font></Th>
-<Th><font>(B * !CI)</font></Th>
+<Th><font>(B * !C)</font></Th>
 <TD align=center>0.38627</TD>
 <TD align=center>0.39280</TD>
 <TD align=center>0.42926</TD>
 </TR>
 <TR>
 <Th><font>A</font></Th>
-<Th><font>(!B * CI)</font></Th>
+<Th><font>(!B * C)</font></Th>
 <TD align=center>0.11860</TD>
 <TD align=center>0.12167</TD>
 <TD align=center>0.15896</TD>
 </TR>
 <TR>
 <Th><font>A</font></Th>
-<Th><font>(!B * CI)</font></Th>
+<Th><font>(!B * C)</font></Th>
 <TD align=center>0.33482</TD>
 <TD align=center>0.34130</TD>
 <TD align=center>0.37905</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(A * !CI)</font></Th>
+<Th><font>(A * !C)</font></Th>
 <TD align=center>0.11483</TD>
 <TD align=center>0.10654</TD>
 <TD align=center>0.10918</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(A * !CI)</font></Th>
+<Th><font>(A * !C)</font></Th>
 <TD align=center>0.50393</TD>
 <TD align=center>0.49735</TD>
 <TD align=center>0.50393</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(!A * CI)</font></Th>
+<Th><font>(!A * C)</font></Th>
 <TD align=center>0.09317</TD>
 <TD align=center>0.08863</TD>
 <TD align=center>0.11816</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(!A * CI)</font></Th>
+<Th><font>(!A * C)</font></Th>
 <TD align=center>0.35943</TD>
 <TD align=center>0.35871</TD>
 <TD align=center>0.39114</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(A * !B)</font></Th>
 <TD align=center>0.11791</TD>
 <TD align=center>0.11416</TD>
 <TD align=center>0.12477</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(A * !B)</font></Th>
 <TD align=center>0.44355</TD>
 <TD align=center>0.44261</TD>
 <TD align=center>0.45498</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(!A * B)</font></Th>
 <TD align=center>0.11855</TD>
 <TD align=center>0.11653</TD>
 <TD align=center>0.13684</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(!A * B)</font></Th>
 <TD align=center>0.37242</TD>
 <TD align=center>0.37303</TD>
@@ -217,90 +217,90 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Internal switching power(fJ) to CO falling (conditional):</B></FONT>
+<FONT><B>Internal switching power(fJ) to Y falling (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Input</TH>
 <TH rowspan=2>When</TH>
 <TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=12>MAJx1_ASAP7_75t_R</TH>
 <Th><font>A</font></Th>
-<Th><font>(B * !CI)</font></Th>
+<Th><font>(B * !C)</font></Th>
 <TD align=center>0.41021</TD>
 <TD align=center>0.41550</TD>
 <TD align=center>0.43901</TD>
 </TR>
 <TR>
 <Th><font>A</font></Th>
-<Th><font>(B * !CI)</font></Th>
+<Th><font>(B * !C)</font></Th>
 <TD align=center>0.13660</TD>
 <TD align=center>0.14062</TD>
 <TD align=center>0.16247</TD>
 </TR>
 <TR>
 <Th><font>A</font></Th>
-<Th><font>(!B * CI)</font></Th>
+<Th><font>(!B * C)</font></Th>
 <TD align=center>0.35765</TD>
 <TD align=center>0.36266</TD>
 <TD align=center>0.38741</TD>
 </TR>
 <TR>
 <Th><font>A</font></Th>
-<Th><font>(!B * CI)</font></Th>
+<Th><font>(!B * C)</font></Th>
 <TD align=center>0.13565</TD>
 <TD align=center>0.13800</TD>
 <TD align=center>0.16338</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(A * !CI)</font></Th>
+<Th><font>(A * !C)</font></Th>
 <TD align=center>0.52040</TD>
 <TD align=center>0.50848</TD>
 <TD align=center>0.53131</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(A * !CI)</font></Th>
+<Th><font>(A * !C)</font></Th>
 <TD align=center>0.13199</TD>
 <TD align=center>0.11839</TD>
 <TD align=center>0.13712</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(!A * CI)</font></Th>
+<Th><font>(!A * C)</font></Th>
 <TD align=center>0.35325</TD>
 <TD align=center>0.35171</TD>
 <TD align=center>0.39196</TD>
 </TR>
 <TR>
 <Th><font>B</font></Th>
-<Th><font>(!A * CI)</font></Th>
+<Th><font>(!A * C)</font></Th>
 <TD align=center>0.08521</TD>
 <TD align=center>0.07989</TD>
 <TD align=center>0.11379</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(A * !B)</font></Th>
 <TD align=center>0.44623</TD>
 <TD align=center>0.44623</TD>
 <TD align=center>0.48708</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(A * !B)</font></Th>
 <TD align=center>0.12429</TD>
 <TD align=center>0.12308</TD>
 <TD align=center>0.16553</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(!A * B)</font></Th>
 <TD align=center>0.35063</TD>
 <TD align=center>0.35423</TD>
 <TD align=center>0.39780</TD>
 </TR>
 <TR>
-<Th><font>CI</font></Th>
+<Th><font>C</font></Th>
 <Th><font>(!A * B)</font></Th>
 <TD align=center>0.09741</TD>
 <TD align=center>0.09951</TD>
@@ -315,25 +315,25 @@
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>MAJx1_ASAP7_75t_R</TH>
-<Th><font>(B * CI * CO)</font></Th>
+<Th><font>(B * C * Y)</font></Th>
 <TD align=center>-0.01836</TD>
 <TD align=center>-0.02307</TD>
 <TD align=center>-0.02492</TD>
 </TR>
 <TR>
-<Th><font>(B * CI * CO)</font></Th>
+<Th><font>(B * C * Y)</font></Th>
 <TD align=center>0.05628</TD>
 <TD align=center>0.05422</TD>
 <TD align=center>0.05387</TD>
 </TR>
 <TR>
-<Th><font>(!B * !CI * !CO)</font></Th>
+<Th><font>(!B * !C * !Y)</font></Th>
 <TD align=center>-0.04317</TD>
 <TD align=center>-0.04374</TD>
 <TD align=center>-0.04430</TD>
 </TR>
 <TR>
-<Th><font>(!B * !CI * !CO)</font></Th>
+<Th><font>(!B * !C * !Y)</font></Th>
 <TD align=center>0.01933</TD>
 <TD align=center>0.01921</TD>
 <TD align=center>0.01904</TD>
@@ -347,25 +347,25 @@
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>MAJx1_ASAP7_75t_R</TH>
-<Th><font>(B * CI * CO)</font></Th>
+<Th><font>(B * C * Y)</font></Th>
 <TD align=center>0.02671</TD>
 <TD align=center>0.02679</TD>
 <TD align=center>0.02676</TD>
 </TR>
 <TR>
-<Th><font>(B * CI * CO)</font></Th>
+<Th><font>(B * C * Y)</font></Th>
 <TD align=center>-0.05284</TD>
 <TD align=center>-0.05317</TD>
 <TD align=center>-0.05338</TD>
 </TR>
 <TR>
-<Th><font>(!B * !CI * !CO)</font></Th>
+<Th><font>(!B * !C * !Y)</font></Th>
 <TD align=center>0.04343</TD>
 <TD align=center>0.04396</TD>
 <TD align=center>0.04430</TD>
 </TR>
 <TR>
-<Th><font>(!B * !CI * !CO)</font></Th>
+<Th><font>(!B * !C * !Y)</font></Th>
 <TD align=center>-0.01915</TD>
 <TD align=center>-0.01907</TD>
 <TD align=center>-0.01899</TD>
@@ -379,25 +379,25 @@
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>MAJx1_ASAP7_75t_R</TH>
-<Th><font>(A * CI * CO)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>-0.02204</TD>
 <TD align=center>-0.02352</TD>
 <TD align=center>-0.02412</TD>
 </TR>
 <TR>
-<Th><font>(A * CI * CO)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>0.12950</TD>
 <TD align=center>0.12899</TD>
 <TD align=center>0.12843</TD>
 </TR>
 <TR>
-<Th><font>(!A * !CI * !CO)</font></Th>
+<Th><font>(!A * !C * !Y)</font></Th>
 <TD align=center>-0.10084</TD>
 <TD align=center>-0.10162</TD>
 <TD align=center>-0.10246</TD>
 </TR>
 <TR>
-<Th><font>(!A * !CI * !CO)</font></Th>
+<Th><font>(!A * !C * !Y)</font></Th>
 <TD align=center>0.05799</TD>
 <TD align=center>0.05781</TD>
 <TD align=center>0.05779</TD>
@@ -411,25 +411,25 @@
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>MAJx1_ASAP7_75t_R</TH>
-<Th><font>(A * CI * CO)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>0.02580</TD>
 <TD align=center>0.02584</TD>
 <TD align=center>0.02580</TD>
 </TR>
 <TR>
-<Th><font>(A * CI * CO)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>-0.12709</TD>
 <TD align=center>-0.12782</TD>
 <TD align=center>-0.12843</TD>
 </TR>
 <TR>
-<Th><font>(!A * !CI * !CO)</font></Th>
+<Th><font>(!A * !C * !Y)</font></Th>
 <TD align=center>0.10191</TD>
 <TD align=center>0.10188</TD>
 <TD align=center>0.10246</TD>
 </TR>
 <TR>
-<Th><font>(!A * !CI * !CO)</font></Th>
+<Th><font>(!A * !C * !Y)</font></Th>
 <TD align=center>-0.05251</TD>
 <TD align=center>-0.05533</TD>
 <TD align=center>-0.05659</TD>
@@ -437,31 +437,31 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for CI rising (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for C rising (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>MAJx1_ASAP7_75t_R</TH>
-<Th><font>(A * B * CO)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>-0.00013</TD>
 <TD align=center>-0.00008</TD>
 <TD align=center>-0.00001</TD>
 </TR>
 <TR>
-<Th><font>(A * B * CO)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>0.10131</TD>
 <TD align=center>0.10195</TD>
 <TD align=center>0.10205</TD>
 </TR>
 <TR>
-<Th><font>(!A * !B * !CO)</font></Th>
+<Th><font>(!A * !B * !Y)</font></Th>
 <TD align=center>-0.06917</TD>
 <TD align=center>-0.06990</TD>
 <TD align=center>-0.07029</TD>
 </TR>
 <TR>
-<Th><font>(!A * !B * !CO)</font></Th>
+<Th><font>(!A * !B * !Y)</font></Th>
 <TD align=center>0.06899</TD>
 <TD align=center>0.06910</TD>
 <TD align=center>0.06893</TD>
@@ -469,31 +469,31 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for CI falling (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for C falling (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>MAJx1_ASAP7_75t_R</TH>
-<Th><font>(A * B * CO)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>0.00013</TD>
 <TD align=center>0.00008</TD>
 <TD align=center>0.00001</TD>
 </TR>
 <TR>
-<Th><font>(A * B * CO)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>-0.10092</TD>
 <TD align=center>-0.10156</TD>
 <TD align=center>-0.10205</TD>
 </TR>
 <TR>
-<Th><font>(!A * !B * !CO)</font></Th>
+<Th><font>(!A * !B * !Y)</font></Th>
 <TD align=center>0.07087</TD>
 <TD align=center>0.07031</TD>
 <TD align=center>0.07029</TD>
 </TR>
 <TR>
-<Th><font>(!A * !B * !CO)</font></Th>
+<Th><font>(!A * !B * !Y)</font></Th>
 <TD align=center>-0.06119</TD>
 <TD align=center>-0.06498</TD>
 <TD align=center>-0.06650</TD>

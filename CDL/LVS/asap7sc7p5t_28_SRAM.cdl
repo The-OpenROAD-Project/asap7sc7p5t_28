@@ -195,111 +195,111 @@ MM25 net20 A1 VDD VDD pmos_sram w=162.00n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT AO21BBx1_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!A2)+(!B)
+.SUBCKT AO21BBx1_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!A2)+(!B)
 MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 ZN B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y B VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP2 npM1 A2 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP3 ZN A_bar npM1 VDD pmos_sram w=162.0n l=20n nfin=6
+MMP3 Y A_bar npM1 VDD pmos_sram w=162.0n l=20n nfin=6
 MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN B nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y B nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN2 nsM0 A2 VSS VSS nmos_sram w=162.0n l=20n nfin=6
 MMN3 nsM0 A_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT AO21BBx2_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!A2)+(!B)
+.SUBCKT AO21BBx2_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!A2)+(!B)
 MPbar1 B_bar A2 VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MPbar2 C_bar B VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MMP1 npM0 C_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP2 Y_bar A1 npM0 VDD pmos_sram w=81.0n l=20n nfin=3
 MMP3 Y_bar B_bar npM0 VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MP_inv Y Y_bar VDD VDD pmos_sram w=162.0n l=20n nfin=6
 MNbar1 B_bar A2 VSS VSS nmos_sram w=27.0n l=20n nfin=1
 MNbar2 C_bar B VSS VSS nmos_sram w=27.0n l=20n nfin=1
 MMN0 Y_bar C_bar VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN2 Y_bar A1 nsM1 VSS nmos_sram w=81.0n l=20n nfin=3
 MMN3 nsM1 B_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MN_inv Y Y_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT AO21BBx4_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!A2)+(!B)
+.SUBCKT AO21BBx4_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!A2)+(!B)
 MPbar1 B_bar A2 VDD VDD pmos_sram w=54.0n l=20n nfin=2
 MPbar2 C_bar B VDD VDD pmos_sram w=54.0n l=20n nfin=2
 MMP1 npM0 C_bar VDD VDD pmos_sram w=162.0n l=20n nfin=6
 MMP2 Y_bar A1 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
 MMP3 Y_bar B_bar npM0 VDD pmos_sram w=162.0n l=20n nfin=6
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
 MNbar1 B_bar A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MNbar2 C_bar B VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN0 Y_bar C_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 MMN2 Y_bar A1 nsM1 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN3 nsM1 B_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT AO21Bx1_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*A2)+(!B)
+.SUBCKT AO21Bx1_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*A2)+(!B)
 MGP0 g_sh A1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
 MGP1 g_sh A2 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP0 ZN B VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP1 ZN g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP1 Y g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MGN1 g_sh A1 nsG0 VSS nmos_sram w=81.0n l=20n nfin=3
 MGN2 nsG0 A2 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN B nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y B nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN2 nsM0 g_sh VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT AO21Bx2_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*A2)+(!B)
+.SUBCKT AO21Bx2_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*A2)+(!B)
 MGP0 g_sh A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MGP1 g_sh A2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 ZN B VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP1 ZN g_sh VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP0 Y B VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP1 Y g_sh VDD VDD pmos_sram w=162.0n l=20n nfin=6
 MGN1 g_sh A1 nsG0 VSS nmos_sram w=135.0n l=20n nfin=5
 MGN2 nsG0 A2 VSS VSS nmos_sram w=135.0n l=20n nfin=5
-MMN1 ZN B nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
+MMN1 Y B nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
 MMN2 nsM0 g_sh VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
 
-.SUBCKT AO21Bx4_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*A2)+(!B)
+.SUBCKT AO21Bx4_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*A2)+(!B)
 MGP0 g_sh A1 VDD VDD pmos_sram w=135.0n l=20n nfin=5
 MGP1 g_sh A2 VDD VDD pmos_sram w=135.0n l=20n nfin=5
-MMP0 ZN B VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP1 ZN g_sh VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP0 Y B VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP1 Y g_sh VDD VDD pmos_sram w=324.0n l=20n nfin=12
 MGN1 g_sh A1 nsG0 VSS nmos_sram w=216.0n l=20n nfin=8
 MGN2 nsG0 A2 VSS VSS nmos_sram w=216.0n l=20n nfin=8
-MMN1 ZN B nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
+MMN1 Y B nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
 MMN2 nsM0 g_sh VSS VSS nmos_sram w=567.0n l=20n nfin=21
 .ENDS
 
 
-.SUBCKT AO21Bx6_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*A2)+(!B)
+.SUBCKT AO21Bx6_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*A2)+(!B)
 MPbar2 C_bar B VDD VDD pmos_sram w=108.0n l=20n nfin=4
 MMP1 npM0 C_bar VDD VDD pmos_sram w=243.0n l=20n nfin=9
 MMP2 Y_bar A1 npM0 VDD pmos_sram w=243.0n l=20n nfin=9
 MMP3 Y_bar A2 npM0 VDD pmos_sram w=243.0n l=20n nfin=9
-MP_inv ZN Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
+MP_inv Y Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
 MNbar2 C_bar B VSS VSS nmos_sram w=108.0n l=20n nfin=4
 MMN0 Y_bar C_bar VSS VSS nmos_sram w=135.0n l=20n nfin=5
 MMN2 Y_bar A1 nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
 MMN3 nsM1 A2 VSS VSS nmos_sram w=216.0n l=20n nfin=8
-MN_inv ZN Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
+MN_inv Y Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
 .ENDS
 
 
@@ -377,35 +377,35 @@ MM6 net23 A1 net38 VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT AO22BBx1_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS ZN
-*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*A2)+(!B1*!B2)
+.SUBCKT AO22BBx1_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS Y
+*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*A2)+(!B1*!B2)
 MGP0 g_sh A1 VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MGP1 g_sh A2 VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MMP0 ZN g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP2 npM1 B2 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP3 ZN B1 npM1 VDD pmos_sram w=162.0n l=20n nfin=6
+MMP3 Y B1 npM1 VDD pmos_sram w=162.0n l=20n nfin=6
 MGN1 g_sh A1 nsG0 VSS nmos_sram w=54.0n l=20n nfin=2
 MGN2 nsG0 A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN1 ZN g_sh nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y g_sh nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN2 nsM0 B2 VSS VSS nmos_sram w=162.0n l=20n nfin=6
 MMN3 nsM0 B1 VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT AO22BBx2_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS ZN
-*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2)+(B1*B2)
-MGP0 g_sh B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MGP1 g_sh B2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 ZN g_sh VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP2 npM1 A2 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP3 ZN A1 npM1 VDD pmos_sram w=324.0n l=20n nfin=12
-MGN1 g_sh B1 nsG0 VSS nmos_sram w=135.0n l=20n nfin=5
-MGN2 nsG0 B2 VSS VSS nmos_sram w=135.0n l=20n nfin=5
-MMN1 ZN g_sh nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
-MMN2 nsM0 A2 VSS VSS nmos_sram w=297.0n l=20n nfin=11
-MMN3 nsM0 A1 VSS VSS nmos_sram w=297.0n l=20n nfin=11
+.SUBCKT AO22BBx2_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS Y
+*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*A2)+(!B1*!B2)
+MGP0 g_sh A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MGP1 g_sh A2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y g_sh VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP2 npM1 B2 VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP3 Y B1 npM1 VDD pmos_sram w=324.0n l=20n nfin=12
+MGN1 g_sh A1 nsG0 VSS nmos_sram w=135.0n l=20n nfin=5
+MGN2 nsG0 A2 VSS VSS nmos_sram w=135.0n l=20n nfin=5
+MMN1 Y g_sh nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
+MMN2 nsM0 B2 VSS VSS nmos_sram w=297.0n l=20n nfin=11
+MMN3 nsM0 B1 VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
 
@@ -687,63 +687,63 @@ MM1 net18 A1 VDD VDD pmos_sram w=162.00n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT AOI21x2_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!B)+(!A2*!B)
+.SUBCKT AOI21x2_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!B)+(!A2*!B)
 MMP1 npM0 B VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP2 ZN A1 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
-MMP3 ZN A2 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
-MMN0 ZN B VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN2 ZN A1 nsM1 VSS nmos_sram w=297.0n l=20n nfin=11
+MMP2 Y A1 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MMP3 Y A2 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MMN0 Y B VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN2 Y A1 nsM1 VSS nmos_sram w=297.0n l=20n nfin=11
 MMN3 nsM1 A2 VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
 
-.SUBCKT AOI21x4_1_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!B)+(!A2*!B)
+.SUBCKT AOI21x4_1_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!B)+(!A2*!B)
 MGP1 npG0 B VDD VDD pmos_sram w=54.0n l=20n nfin=2
 MGP2 g_sh A1 npG0 VDD pmos_sram w=54.0n l=20n nfin=2
 MGP3 g_sh A2 npG0 VDD pmos_sram w=54.0n l=20n nfin=2
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
 MGN0 g_sh B VSS VSS nmos_sram w=27.0n l=20n nfin=1
 MGN2 g_sh A1 nsG1 VSS nmos_sram w=54.0n l=20n nfin=2
 MGN3 nsG1 A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT AOI21x4_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!B)+(!A2*!B)
+.SUBCKT AOI21x4_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!B)+(!A2*!B)
 MGP1 npG0 B VDD VDD pmos_sram w=54.0n l=20n nfin=2
 MGP2 g_sh A1 npG0 VDD pmos_sram w=54.0n l=20n nfin=2
 MGP3 g_sh A2 npG0 VDD pmos_sram w=54.0n l=20n nfin=2
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
 MGN0 g_sh B VSS VSS nmos_sram w=27.0n l=20n nfin=1
 MGN2 g_sh A1 nsG1 VSS nmos_sram w=54.0n l=20n nfin=2
 MGN3 nsG1 A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT AOI21x6_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!B)+(!A2*!B)
+.SUBCKT AOI21x6_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!B)+(!A2*!B)
 MGP1 npG0 B VDD VDD pmos_sram w=108.0n l=20n nfin=4
 MGP2 g_sh A1 npG0 VDD pmos_sram w=108.0n l=20n nfin=4
 MGP3 g_sh A2 npG0 VDD pmos_sram w=108.0n l=20n nfin=4
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=135.0n l=20n nfin=5
-MP_inv ZN Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
+MP_inv Y Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
 MGN0 g_sh B VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MGN2 g_sh A1 nsG1 VSS nmos_sram w=81.0n l=20n nfin=3
 MGN3 nsG1 A2 VSS VSS nmos_sram w=81.0n l=20n nfin=3
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=135.0n l=20n nfin=5
-MN_inv ZN Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
+MN_inv Y Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
 .ENDS
 
 
@@ -823,16 +823,16 @@ MM6 Y A2 net30 VSS nmos_sram w=162.00n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT AOI22x2_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS ZN
-*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!B1)+(!A1*!B2)+(!A2*!B1)+(!A2*!B2)
+.SUBCKT AOI22x2_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS Y
+*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!B1)+(!A1*!B2)+(!A2*!B1)+(!A2*!B2)
 MMP1 npM0 B1 VDD VDD pmos_sram w=324.0n l=20n nfin=12
 MMP2 npM0 B2 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP3 ZN A1 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
-MMP4 ZN A2 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
-MMN1 ZN B1 nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
+MMP3 Y A1 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MMP4 Y A2 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MMN1 Y B1 nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
 MMN2 nsM0 B2 VSS VSS nmos_sram w=297.0n l=20n nfin=11
-MMN4 ZN A1 nsM3 VSS nmos_sram w=297.0n l=20n nfin=11
+MMN4 Y A1 nsM3 VSS nmos_sram w=297.0n l=20n nfin=11
 MMN5 nsM3 A2 VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
@@ -2257,11 +2257,11 @@ MM1 Y A VDD VDD pmos_sram w=891.00n l=20n nfin=33
 .ENDS
 
 
-.SUBCKT INVx12_ASAP7_75t_SRAM I VDD VSS ZN
-*.PININFO I:I VDD:P VSS:G ZN:O
-*.EQN ZN=!I
-MMP0 ZN I VDD VDD pmos_sram w=972.0n l=20n nfin=36
-MMN0 ZN I VSS VSS nmos_sram w=972.0n l=20n nfin=36
+.SUBCKT INVx12_ASAP7_75t_SRAM A VDD VSS Y
+*.PININFO A:I VDD:P VSS:G Y:O
+*.EQN Y=!A
+MMP0 Y A VDD VDD pmos_sram w=972.0n l=20n nfin=36
+MMN0 Y A VSS VSS nmos_sram w=972.0n l=20n nfin=36
 .ENDS
 
 
@@ -2339,21 +2339,21 @@ MM5 Y A net3 VDD pmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT MAJx1_ASAP7_75t_SRAM A B CI VDD VSS CO
-*.PININFO A:I B:I CI:I VDD:P VSS:G CO:O
-*.EQN CO=(A*B)+(A*CI)+(B*CI)
+.SUBCKT MAJx1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*B)+(A*C)+(B*C)
 MMP1 npM0 A VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP2 Y_bar CI npM0 VDD pmos_sram w=54.0n l=20n nfin=2
+MMP2 Y_bar C npM0 VDD pmos_sram w=54.0n l=20n nfin=2
 MMP3 Y_bar B npM0 VDD pmos_sram w=54.0n l=20n nfin=2
 MMP5 npM4 B VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP6 Y_bar CI npM4 VDD pmos_sram w=54.0n l=20n nfin=2
-MP_inv CO Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP6 Y_bar C npM4 VDD pmos_sram w=54.0n l=20n nfin=2
+MP_inv Y Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMN1 Y_bar A nsM0 VSS nmos_sram w=54.0n l=20n nfin=2
-MMN2 nsM0 CI VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN2 nsM0 C VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN3 nsM0 B VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN5 Y_bar B nsM4 VSS nmos_sram w=54.0n l=20n nfin=2
-MMN6 nsM4 CI VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MN_inv CO Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN6 nsM4 C VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MN_inv Y Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
@@ -2389,121 +2389,121 @@ MM11 Y maji VDD VDD pmos_sram w=243.00n l=20n nfin=9
 .ENDS
 
 
-.SUBCKT MUX2Ix1_ASAP7_75t_SRAM I0 I1 S VDD VSS ZN
-*.PININFO I0:I I1:I S:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!I0*!S)+(!I1*S)
-MPtg1 Y_bar C_bar I1 VDD pmos_sram w=27.0n l=20n nfin=1
-MPtg0 Y_bar S I0 VDD pmos_sram w=27.0n l=20n nfin=1
+.SUBCKT MUX2Ix1_ASAP7_75t_SRAM A B S VDD VSS Y
+*.PININFO A:I B:I S:I VDD:P VSS:G Y:O
+*.EQN Y=(!A*!S)+(!B*S)
+MPtg1 Y_bar C_bar B VDD pmos_sram w=27.0n l=20n nfin=1
+MPtg0 Y_bar S A VDD pmos_sram w=27.0n l=20n nfin=1
 MPbar2 C_bar S VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MP_inv ZN Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MNtg1 Y_bar S I1 VSS nmos_sram w=27.0n l=20n nfin=1
-MNtg0 Y_bar C_bar I0 VSS nmos_sram w=27.0n l=20n nfin=1
+MP_inv Y Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MNtg1 Y_bar S B VSS nmos_sram w=27.0n l=20n nfin=1
+MNtg0 Y_bar C_bar A VSS nmos_sram w=27.0n l=20n nfin=1
 MNbar2 C_bar S VSS VSS nmos_sram w=27.0n l=20n nfin=1
-MN_inv ZN Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MN_inv Y Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT MUX2x1_ASAP7_75t_SRAM I0 I1 S VDD VSS Z
-*.PININFO I0:I I1:I S:I VDD:P VSS:G Z:O
-*.EQN Z=(I0*!S)+(I1*S)
-MPtg1 Y_pt C_bar I1 VDD pmos_sram w=27.0n l=20n nfin=1
-MPtg0 Y_pt S I0 VDD pmos_sram w=27.0n l=20n nfin=1
+.SUBCKT MUX2x1_ASAP7_75t_SRAM A B S VDD VSS Y
+*.PININFO A:I B:I S:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!S)+(B*S)
+MPtg1 Y_pt C_bar B VDD pmos_sram w=27.0n l=20n nfin=1
+MPtg0 Y_pt S A VDD pmos_sram w=27.0n l=20n nfin=1
 MPbar2 C_bar S VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MP_buf Y_bar Y_pt VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MP_inv Z Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MNtg1 Y_pt S I1 VSS nmos_sram w=27.0n l=20n nfin=1
-MNtg0 Y_pt C_bar I0 VSS nmos_sram w=27.0n l=20n nfin=1
+MP_inv Y Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MNtg1 Y_pt S B VSS nmos_sram w=27.0n l=20n nfin=1
+MNtg0 Y_pt C_bar A VSS nmos_sram w=27.0n l=20n nfin=1
 MNbar2 C_bar S VSS VSS nmos_sram w=27.0n l=20n nfin=1
 MN_buf Y_bar Y_pt VSS VSS nmos_sram w=27.0n l=20n nfin=1
-MN_inv Z Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MN_inv Y Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT MUX2x3_ASAP7_75t_SRAM I0 I1 S VDD VSS Z
-*.PININFO I0:I I1:I S:I VDD:P VSS:G Z:O
-*.EQN Z=(I0*!S)+(I1*S)
-MPtg1 Y_pt C_bar I1 VDD pmos_sram w=27.0n l=20n nfin=1
-MPtg0 Y_pt S I0 VDD pmos_sram w=27.0n l=20n nfin=1
+.SUBCKT MUX2x3_ASAP7_75t_SRAM A B S VDD VSS Y
+*.PININFO A:I B:I S:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!S)+(B*S)
+MPtg1 Y_pt C_bar B VDD pmos_sram w=27.0n l=20n nfin=1
+MPtg0 Y_pt S A VDD pmos_sram w=27.0n l=20n nfin=1
 MPbar2 C_bar S VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MP_buf Y_bar Y_pt VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv Z Y_bar VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MNtg1 Y_pt S I1 VSS nmos_sram w=27.0n l=20n nfin=1
-MNtg0 Y_pt C_bar I0 VSS nmos_sram w=27.0n l=20n nfin=1
+MP_inv Y Y_bar VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MNtg1 Y_pt S B VSS nmos_sram w=27.0n l=20n nfin=1
+MNtg0 Y_pt C_bar A VSS nmos_sram w=27.0n l=20n nfin=1
 MNbar2 C_bar S VSS VSS nmos_sram w=27.0n l=20n nfin=1
 MN_buf Y_bar Y_pt VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv Z Y_bar VSS VSS nmos_sram w=243.0n l=20n nfin=9
+MN_inv Y Y_bar VSS VSS nmos_sram w=243.0n l=20n nfin=9
 .ENDS
 
 
-.SUBCKT NAND2Bx1_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP0 ZN A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP1 ZN B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MNbar0 A_bar A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN1 ZN A_bar nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
-MMN2 nsM0 B1 VSS VSS nmos_sram w=162.0n l=20n nfin=6
+.SUBCKT NAND2Bx1_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MMP0 Y A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP1 Y B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MNbar0 A_bar A VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN1 Y A_bar nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
+MMN2 nsM0 B VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT NAND2Bx2_1_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 ZN A_bar VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP1 ZN B1 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN A_bar nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
-MMN2 nsM0 B1 VSS VSS nmos_sram w=297.0n l=20n nfin=11
+.SUBCKT NAND2Bx2_1_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y A_bar VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP1 Y B VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y A_bar nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
+MMN2 nsM0 B VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
 
-.SUBCKT NAND2Bx2_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 ZN A_bar VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP1 ZN B1 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN A_bar nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
-MMN2 nsM0 B1 VSS VSS nmos_sram w=297.0n l=20n nfin=11
+.SUBCKT NAND2Bx2_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y A_bar VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP1 Y B VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y A_bar nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
+MMN2 nsM0 B VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
 
-.SUBCKT NAND2Bx3_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=135.0n l=20n nfin=5
-MMP0 ZN A_bar VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MMP1 ZN B1 VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MNbar0 A_bar A1 VSS VSS nmos_sram w=135.0n l=20n nfin=5
-MMN1 ZN A_bar nsM0 VSS nmos_sram w=432.0n l=20n nfin=16
-MMN2 nsM0 B1 VSS VSS nmos_sram w=432.0n l=20n nfin=16
+.SUBCKT NAND2Bx3_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=135.0n l=20n nfin=5
+MMP0 Y A_bar VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MMP1 Y B VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MNbar0 A_bar A VSS VSS nmos_sram w=135.0n l=20n nfin=5
+MMN1 Y A_bar nsM0 VSS nmos_sram w=432.0n l=20n nfin=16
+MMN2 nsM0 B VSS VSS nmos_sram w=432.0n l=20n nfin=16
 .ENDS
 
 
-.SUBCKT NAND2Bx4_1_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP0 ZN A_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP1 ZN B1 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MNbar0 A_bar A1 VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN1 ZN A_bar nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
-MMN2 nsM0 B1 VSS VSS nmos_sram w=567.0n l=20n nfin=21
+.SUBCKT NAND2Bx4_1_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP0 Y A_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP1 Y B VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MNbar0 A_bar A VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y A_bar nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
+MMN2 nsM0 B VSS VSS nmos_sram w=567.0n l=20n nfin=21
 .ENDS
 
 
-.SUBCKT NAND2Bx4_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP0 ZN A_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP1 ZN B1 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MNbar0 A_bar A1 VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN1 ZN A_bar nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
-MMN2 nsM0 B1 VSS VSS nmos_sram w=567.0n l=20n nfin=21
+.SUBCKT NAND2Bx4_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP0 Y A_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP1 Y B VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MNbar0 A_bar A VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y A_bar nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
+MMN2 nsM0 B VSS VSS nmos_sram w=567.0n l=20n nfin=21
 .ENDS
 
 
@@ -2531,33 +2531,33 @@ MM0 Y A VDD VDD pmos_sram w=162.00n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT NAND2x3_ASAP7_75t_SRAM A1 A2 VDD VSS ZN
-*.PININFO A1:I A2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1)+(!A2)
-MMP0 ZN A1 VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MMP1 ZN A2 VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MMN1 ZN A1 nsM0 VSS nmos_sram w=432.0n l=20n nfin=16
-MMN2 nsM0 A2 VSS VSS nmos_sram w=432.0n l=20n nfin=16
+.SUBCKT NAND2x3_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A)+(!B)
+MMP0 Y A VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MMP1 Y B VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MMN1 Y A nsM0 VSS nmos_sram w=432.0n l=20n nfin=16
+MMN2 nsM0 B VSS VSS nmos_sram w=432.0n l=20n nfin=16
 .ENDS
 
 
-.SUBCKT NAND2x4_ASAP7_75t_SRAM A1 A2 VDD VSS ZN
-*.PININFO A1:I A2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1)+(!A2)
-MMP0 ZN A1 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP1 ZN A2 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMN1 ZN A1 nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
-MMN2 nsM0 A2 VSS VSS nmos_sram w=567.0n l=20n nfin=21
+.SUBCKT NAND2x4_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A)+(!B)
+MMP0 Y A VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP1 Y B VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMN1 Y A nsM0 VSS nmos_sram w=567.0n l=20n nfin=21
+MMN2 nsM0 B VSS VSS nmos_sram w=567.0n l=20n nfin=21
 .ENDS
 
 
-.SUBCKT NAND2x6_ASAP7_75t_SRAM A1 A2 VDD VSS ZN
-*.PININFO A1:I A2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1)+(!A2)
-MMP0 ZN A1 VDD VDD pmos_sram w=486.0n l=20n nfin=18
-MMP1 ZN A2 VDD VDD pmos_sram w=486.0n l=20n nfin=18
-MMN1 ZN A1 nsM0 VSS nmos_sram w=864.0n l=20n nfin=32
-MMN2 nsM0 A2 VSS VSS nmos_sram w=864.0n l=20n nfin=32
+.SUBCKT NAND2x6_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A)+(!B)
+MMP0 Y A VDD VDD pmos_sram w=486.0n l=20n nfin=18
+MMP1 Y B VDD VDD pmos_sram w=486.0n l=20n nfin=18
+MMN1 Y A nsM0 VSS nmos_sram w=864.0n l=20n nfin=32
+MMN2 nsM0 B VSS VSS nmos_sram w=864.0n l=20n nfin=32
 .ENDS
 
 
@@ -2585,95 +2585,95 @@ MM2 Y A VDD VDD pmos_sram w=54.0n l=20n nfin=2
 .ENDS
 
 
-.SUBCKT NAND3BBx1_1_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(A2)+(!B)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MPbar1 B_bar A2 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP0 ZN A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP1 ZN B_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 ZN B VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MNbar0 A_bar A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MNbar1 B_bar A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN2 ZN A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
+.SUBCKT NAND3BBx1_1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(B)+(!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MPbar1 B_bar B VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MMP0 Y A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP1 Y B_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 Y C VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MNbar0 A_bar A VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MNbar1 B_bar B VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN2 Y A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
 MMN3 nsM0 B_bar nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
-MMN4 nsM1 B VSS VSS nmos_sram w=216.0n l=20n nfin=8
+MMN4 nsM1 C VSS VSS nmos_sram w=216.0n l=20n nfin=8
 .ENDS
 
 
-.SUBCKT NAND3BBx1_ASAP7_75t_SRAM A1 A2 B1 VDD VSS ZN
-*.PININFO A1:I A2:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(A2)+(!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MPbar1 B_bar A2 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP0 ZN A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP1 ZN B_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 ZN B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MNbar0 A_bar A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MNbar1 B_bar A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN2 ZN A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
+.SUBCKT NAND3BBx1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(B)+(!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MPbar1 B_bar B VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MMP0 Y A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP1 Y B_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 Y C VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MNbar0 A_bar A VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MNbar1 B_bar B VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN2 Y A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
 MMN3 nsM0 B_bar nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
-MMN4 nsM1 B1 VSS VSS nmos_sram w=216.0n l=20n nfin=8
+MMN4 nsM1 C VSS VSS nmos_sram w=216.0n l=20n nfin=8
 .ENDS
 
 
-.SUBCKT NAND3BBx4_ASAP7_75t_SRAM A1 A2 B1 VDD VSS ZN
-*.PININFO A1:I A2:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(A2)+(!B1)
-MPbar2 C_bar B1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP2 npM0 A2 VDD VDD pmos_sram w=135.0n l=20n nfin=5
-MMP3 npM1 A1 npM0 VDD pmos_sram w=135.0n l=20n nfin=5
+.SUBCKT NAND3BBx4_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(B)+(!C)
+MPbar2 C_bar C VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MMP2 npM0 B VDD VDD pmos_sram w=135.0n l=20n nfin=5
+MMP3 npM1 A npM0 VDD pmos_sram w=135.0n l=20n nfin=5
 MMP4 Y_bar C_bar npM1 VDD pmos_sram w=135.0n l=20n nfin=5
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MNbar2 C_bar B1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN0 Y_bar A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN1 Y_bar A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MNbar2 C_bar C VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN0 Y_bar B VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN1 Y_bar A VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN2 Y_bar C_bar VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT NAND3Bx1_1_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)+(!B2)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 ZN A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP1 ZN B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 ZN B2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
-MMN3 nsM0 B1 nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
-MMN4 nsM1 B2 VSS VSS nmos_sram w=216.0n l=20n nfin=8
+.SUBCKT NAND3Bx1_1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)+(!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP1 Y B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 Y C VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
+MMN3 nsM0 B nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
+MMN4 nsM1 C VSS VSS nmos_sram w=216.0n l=20n nfin=8
 .ENDS
 
 
-.SUBCKT NAND3Bx1_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)+(!B2)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 ZN A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP1 ZN B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 ZN B2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
-MMN3 nsM0 B1 nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
-MMN4 nsM1 B2 VSS VSS nmos_sram w=216.0n l=20n nfin=8
+.SUBCKT NAND3Bx1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)+(!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y A_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP1 Y B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 Y C VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y A_bar nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
+MMN3 nsM0 B nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
+MMN4 nsM1 C VSS VSS nmos_sram w=216.0n l=20n nfin=8
 .ENDS
 
 
-.SUBCKT NAND3Bx6_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)+(!B2)
-MGP0 g_sh B1 VDD VDD pmos_sram w=108.0n l=20n nfin=4
-MGP1 g_sh B2 VDD VDD pmos_sram w=108.0n l=20n nfin=4
+.SUBCKT NAND3Bx6_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)+(!C)
+MGP0 g_sh B VDD VDD pmos_sram w=108.0n l=20n nfin=4
+MGP1 g_sh C VDD VDD pmos_sram w=108.0n l=20n nfin=4
 MMP1 npM0 g_sh VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP2 Y_bar A1 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
-MP_inv ZN Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
-MGN1 g_sh B1 nsG0 VSS nmos_sram w=162.0n l=20n nfin=6
-MGN2 nsG0 B2 VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMP2 Y_bar A npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MP_inv Y Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
+MGN1 g_sh B nsG0 VSS nmos_sram w=162.0n l=20n nfin=6
+MGN2 nsG0 C VSS VSS nmos_sram w=162.0n l=20n nfin=6
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 Y_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
+MMN1 Y_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MN_inv Y Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
 .ENDS
 
 
@@ -2697,19 +2697,19 @@ MM5 Y C VDD VDD pmos_sram w=162.00n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT NAND3x4_ASAP7_75t_SRAM A1 A2 A3 VDD VSS ZN
-*.PININFO A1:I A2:I A3:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1)+(!A2)+(!A3)
-MGP0 g_sh A1 VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MGP1 g_sh A2 VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MGP2 g_sh A3 VDD VDD pmos_sram w=27.0n l=20n nfin=1
+.SUBCKT NAND3x4_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(!A)+(!B)+(!C)
+MGP0 g_sh A VDD VDD pmos_sram w=27.0n l=20n nfin=1
+MGP1 g_sh B VDD VDD pmos_sram w=27.0n l=20n nfin=1
+MGP2 g_sh C VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MGN2 g_sh A1 nsG0 VSS nmos_sram w=54.0n l=20n nfin=2
-MGN3 nsG0 A2 nsG1 VSS nmos_sram w=54.0n l=20n nfin=2
-MGN4 nsG1 A3 VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MGN2 g_sh A nsG0 VSS nmos_sram w=54.0n l=20n nfin=2
+MGN3 nsG0 B nsG1 VSS nmos_sram w=54.0n l=20n nfin=2
+MGN4 nsG1 C VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
@@ -2723,39 +2723,39 @@ MM5 Y C VDD VDD pmos_sram w=54.0n l=20n nfin=2
 .ENDS
 
 
-.SUBCKT NAND4Bx1_ASAP7_75t_SRAM A1 B1 B2 B3 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I B3:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1)+(!B1)+(!B2)+(!B3)
-MGP0 g_sh B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MGP1 g_sh B2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MGP2 g_sh B3 VDD VDD pmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NAND4Bx1_ASAP7_75t_SRAM A B C D VDD VSS Y
+*.PININFO A:I B:I C:I D:I VDD:P VSS:G Y:O
+*.EQN Y=(A)+(!B)+(!C)+(!D)
+MGP0 g_sh B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MGP1 g_sh C VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MGP2 g_sh D VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP1 npM0 g_sh VDD VDD pmos_sram w=108.0n l=20n nfin=4
-MMP2 Y_bar A1 npM0 VDD pmos_sram w=108.0n l=20n nfin=4
-MP_inv ZN Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MGN2 g_sh B1 nsG0 VSS nmos_sram w=135.0n l=20n nfin=5
-MGN3 nsG0 B2 nsG1 VSS nmos_sram w=135.0n l=20n nfin=5
-MGN4 nsG1 B3 VSS VSS nmos_sram w=135.0n l=20n nfin=5
+MMP2 Y_bar A npM0 VDD pmos_sram w=108.0n l=20n nfin=4
+MP_inv Y Y_bar VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MGN2 g_sh B nsG0 VSS nmos_sram w=135.0n l=20n nfin=5
+MGN3 nsG0 C nsG1 VSS nmos_sram w=135.0n l=20n nfin=5
+MGN4 nsG1 D VSS VSS nmos_sram w=135.0n l=20n nfin=5
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN1 Y_bar A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MN_inv ZN Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y_bar A VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MN_inv Y Y_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT NAND4x4_ASAP7_75t_SRAM A1 A2 A3 A4 VDD VSS ZN
-*.PININFO A1:I A2:I A3:I A4:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1)+(!A2)+(!A3)+(!A4)
-MGP0 g_sh A1 VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MGP1 g_sh A2 VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MGP2 g_sh A3 VDD VDD pmos_sram w=27.0n l=20n nfin=1
-MGP3 g_sh A4 VDD VDD pmos_sram w=27.0n l=20n nfin=1
+.SUBCKT NAND4x4_ASAP7_75t_SRAM A B C D VDD VSS Y
+*.PININFO A:I B:I C:I D:I VDD:P VSS:G Y:O
+*.EQN Y=(!A)+(!B)+(!C)+(!D)
+MGP0 g_sh A VDD VDD pmos_sram w=27.0n l=20n nfin=1
+MGP1 g_sh B VDD VDD pmos_sram w=27.0n l=20n nfin=1
+MGP2 g_sh C VDD VDD pmos_sram w=27.0n l=20n nfin=1
+MGP3 g_sh D VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MGN3 g_sh A1 nsG0 VSS nmos_sram w=81.0n l=20n nfin=3
-MGN4 nsG0 A2 nsG1 VSS nmos_sram w=81.0n l=20n nfin=3
-MGN5 nsG1 A3 nsG2 VSS nmos_sram w=81.0n l=20n nfin=3
-MGN6 nsG2 A4 VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MGN3 g_sh A nsG0 VSS nmos_sram w=81.0n l=20n nfin=3
+MGN4 nsG0 B nsG1 VSS nmos_sram w=81.0n l=20n nfin=3
+MGN5 nsG1 C nsG2 VSS nmos_sram w=81.0n l=20n nfin=3
+MGN6 nsG2 D VSS VSS nmos_sram w=81.0n l=20n nfin=3
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
@@ -2797,89 +2797,89 @@ MM10 Y A VDD VDD pmos_sram w=54.0n l=20n nfin=2
 .ENDS
 
 
-.SUBCKT NOR2Bx1_1_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP1 npM0 B1 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP2 ZN A_bar npM0 VDD pmos_sram w=162.0n l=20n nfin=6
-MNbar0 A_bar A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN0 ZN B1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NOR2Bx1_1_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MMP1 npM0 B VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP2 Y A_bar npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MNbar0 A_bar A VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN0 Y B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT NOR2Bx1_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MMP1 npM0 B1 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP2 ZN A_bar npM0 VDD pmos_sram w=162.0n l=20n nfin=6
-MNbar0 A_bar A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN0 ZN B1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NOR2Bx1_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=54.0n l=20n nfin=2
+MMP1 npM0 B VDD VDD pmos_sram w=162.0n l=20n nfin=6
+MMP2 Y A_bar npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MNbar0 A_bar A VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN0 Y B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT NOR2Bx2_1_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=108.0n l=20n nfin=4
-MMP1 npM0 B1 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP2 ZN A_bar npM0 VDD pmos_sram w=324.0n l=20n nfin=12
-MNbar0 A_bar A1 VSS VSS nmos_sram w=108.0n l=20n nfin=4
-MMN0 ZN B1 VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN1 ZN A_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
+.SUBCKT NOR2Bx2_1_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=108.0n l=20n nfin=4
+MMP1 npM0 B VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP2 Y A_bar npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MNbar0 A_bar A VSS VSS nmos_sram w=108.0n l=20n nfin=4
+MMN0 Y B VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y A_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT NOR2Bx2_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=108.0n l=20n nfin=4
-MMP1 npM0 B1 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP2 ZN A_bar npM0 VDD pmos_sram w=324.0n l=20n nfin=12
-MNbar0 A_bar A1 VSS VSS nmos_sram w=108.0n l=20n nfin=4
-MMN0 ZN B1 VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN1 ZN A_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
+.SUBCKT NOR2Bx2_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=108.0n l=20n nfin=4
+MMP1 npM0 B VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MMP2 Y A_bar npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MNbar0 A_bar A VSS VSS nmos_sram w=108.0n l=20n nfin=4
+MMN0 Y B VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y A_bar VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT NOR2Bx3_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=189.0n l=20n nfin=7
-MMP1 npM0 B1 VDD VDD pmos_sram w=459.0n l=20n nfin=17
-MMP2 ZN A_bar npM0 VDD pmos_sram w=459.0n l=20n nfin=17
-MNbar0 A_bar A1 VSS VSS nmos_sram w=189.0n l=20n nfin=7
-MMN0 ZN B1 VSS VSS nmos_sram w=243.0n l=20n nfin=9
-MMN1 ZN A_bar VSS VSS nmos_sram w=243.0n l=20n nfin=9
+.SUBCKT NOR2Bx3_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=189.0n l=20n nfin=7
+MMP1 npM0 B VDD VDD pmos_sram w=459.0n l=20n nfin=17
+MMP2 Y A_bar npM0 VDD pmos_sram w=459.0n l=20n nfin=17
+MNbar0 A_bar A VSS VSS nmos_sram w=189.0n l=20n nfin=7
+MMN0 Y B VSS VSS nmos_sram w=243.0n l=20n nfin=9
+MMN1 Y A_bar VSS VSS nmos_sram w=243.0n l=20n nfin=9
 .ENDS
 
 
-.SUBCKT NOR2Bx4_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MMP1 npM0 B1 VDD VDD pmos_sram w=621.0n l=20n nfin=23
-MMP2 ZN A_bar npM0 VDD pmos_sram w=621.0n l=20n nfin=23
-MNbar0 A_bar A1 VSS VSS nmos_sram w=243.0n l=20n nfin=9
-MMN0 ZN B1 VSS VSS nmos_sram w=324.0n l=20n nfin=12
-MMN1 ZN A_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+.SUBCKT NOR2Bx4_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B)
+MPbar0 A_bar A VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MMP1 npM0 B VDD VDD pmos_sram w=621.0n l=20n nfin=23
+MMP2 Y A_bar npM0 VDD pmos_sram w=621.0n l=20n nfin=23
+MNbar0 A_bar A VSS VSS nmos_sram w=243.0n l=20n nfin=9
+MMN0 Y B VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MMN1 Y A_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT NOR2Bx6_ASAP7_75t_SRAM A1 B1 VDD VSS ZN
-*.PININFO A1:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)
-MPbar1 B_bar B1 VDD VDD pmos_sram w=108.0n l=20n nfin=4
-MMP0 Y_bar A1 VDD VDD pmos_sram w=135.0n l=20n nfin=5
+.SUBCKT NOR2Bx6_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B)
+MPbar1 B_bar B VDD VDD pmos_sram w=108.0n l=20n nfin=4
+MMP0 Y_bar A VDD VDD pmos_sram w=135.0n l=20n nfin=5
 MMP1 Y_bar B_bar VDD VDD pmos_sram w=135.0n l=20n nfin=5
-MP_inv ZN Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
-MNbar1 B_bar B1 VSS VSS nmos_sram w=108.0n l=20n nfin=4
-MMN1 Y_bar A1 nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
+MP_inv Y Y_bar VDD VDD pmos_sram w=486.0n l=20n nfin=18
+MNbar1 B_bar B VSS VSS nmos_sram w=108.0n l=20n nfin=4
+MMN1 Y_bar A nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
 MMN2 nsM0 B_bar VSS VSS nmos_sram w=216.0n l=20n nfin=8
-MN_inv ZN Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
+MN_inv Y Y_bar VSS VSS nmos_sram w=486.0n l=20n nfin=18
 .ENDS
 
 
@@ -2907,23 +2907,23 @@ MM3 VDD A net16 VDD pmos_sram w=324.00n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT NOR2x4_ASAP7_75t_SRAM A1 A2 VDD VSS ZN
-*.PININFO A1:I A2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2)
-MMP1 npM0 A2 VDD VDD pmos_sram w=621.0n l=20n nfin=23
-MMP2 ZN A1 npM0 VDD pmos_sram w=621.0n l=20n nfin=23
-MMN0 ZN A2 VSS VSS nmos_sram w=324.0n l=20n nfin=12
-MMN1 ZN A1 VSS VSS nmos_sram w=324.0n l=20n nfin=12
+.SUBCKT NOR2x4_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A*!B)
+MMP1 npM0 B VDD VDD pmos_sram w=621.0n l=20n nfin=23
+MMP2 Y A npM0 VDD pmos_sram w=621.0n l=20n nfin=23
+MMN0 Y B VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MMN1 Y A VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT NOR2x6_ASAP7_75t_SRAM A1 A2 VDD VSS ZN
-*.PININFO A1:I A2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2)
-MMP1 npM0 A2 VDD VDD pmos_sram w=918.0n l=20n nfin=34
-MMP2 ZN A1 npM0 VDD pmos_sram w=918.0n l=20n nfin=34
-MMN0 ZN A2 VSS VSS nmos_sram w=486.0n l=20n nfin=18
-MMN1 ZN A1 VSS VSS nmos_sram w=486.0n l=20n nfin=18
+.SUBCKT NOR2x6_ASAP7_75t_SRAM A B VDD VSS Y
+*.PININFO A:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A*!B)
+MMP1 npM0 B VDD VDD pmos_sram w=918.0n l=20n nfin=34
+MMP2 Y A npM0 VDD pmos_sram w=918.0n l=20n nfin=34
+MMN0 Y B VSS VSS nmos_sram w=486.0n l=20n nfin=18
+MMN1 Y A VSS VSS nmos_sram w=486.0n l=20n nfin=18
 .ENDS
 
 
@@ -2943,111 +2943,111 @@ MM3 VDD A net16 VDD pmos_sram w=108.00n l=20n nfin=4
 .ENDS
 
 
-.SUBCKT NOR3BBx1_1_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*A2*!B)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MPbar1 B_bar A2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 npM0 B VDD VDD pmos_sram w=243.0n l=20n nfin=9
+.SUBCKT NOR3BBx1_1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*B*!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MPbar1 B_bar B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 npM0 C VDD VDD pmos_sram w=243.0n l=20n nfin=9
 MMP3 npM1 B_bar npM0 VDD pmos_sram w=243.0n l=20n nfin=9
-MMP4 ZN A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MNbar1 B_bar A2 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN0 ZN B VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN B_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMP4 Y A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MNbar1 B_bar B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN0 Y C VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y B_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT NOR3BBx1_ASAP7_75t_SRAM A1 A2 B1 VDD VSS ZN
-*.PININFO A1:I A2:I B1:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*A2*!B1)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MPbar1 B_bar A2 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 npM0 B1 VDD VDD pmos_sram w=243.0n l=20n nfin=9
+.SUBCKT NOR3BBx1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*B*!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MPbar1 B_bar B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 npM0 C VDD VDD pmos_sram w=243.0n l=20n nfin=9
 MMP3 npM1 B_bar npM0 VDD pmos_sram w=243.0n l=20n nfin=9
-MMP4 ZN A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MNbar1 B_bar A2 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN0 ZN B1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN B_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMP4 Y A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MNbar1 B_bar B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN0 Y C VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y B_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT NOR3Bx1_1_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1*!B2)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 npM0 B2 VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MMP3 npM1 B1 npM0 VDD pmos_sram w=243.0n l=20n nfin=9
-MMP4 ZN A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN0 ZN B2 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN B1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NOR3Bx1_1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B*!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 npM0 C VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MMP3 npM1 B npM0 VDD pmos_sram w=243.0n l=20n nfin=9
+MMP4 Y A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN0 Y C VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT NOR3Bx1_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1*!B2)
-MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP2 npM0 B2 VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MMP3 npM1 B1 npM0 VDD pmos_sram w=243.0n l=20n nfin=9
-MMP4 ZN A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
-MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN0 ZN B2 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN B1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NOR3Bx1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B*!C)
+MPbar0 A_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP2 npM0 C VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MMP3 npM1 B npM0 VDD pmos_sram w=243.0n l=20n nfin=9
+MMP4 Y A_bar npM1 VDD pmos_sram w=243.0n l=20n nfin=9
+MNbar0 A_bar A VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN0 Y C VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y A_bar VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT NOR3Bx3_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1*!B2)
-MGP1 npG0 B1 VDD VDD pmos_sram w=108.0n l=20n nfin=4
-MGP2 g_sh B2 npG0 VDD pmos_sram w=108.0n l=20n nfin=4
-MMP0 Y_bar A1 VDD VDD pmos_sram w=54.0n l=20n nfin=2
+.SUBCKT NOR3Bx3_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B*!C)
+MGP1 npG0 B VDD VDD pmos_sram w=108.0n l=20n nfin=4
+MGP2 g_sh C npG0 VDD pmos_sram w=108.0n l=20n nfin=4
+MMP0 Y_bar A VDD VDD pmos_sram w=54.0n l=20n nfin=2
 MMP1 Y_bar g_sh VDD VDD pmos_sram w=54.0n l=20n nfin=2
-MP_inv ZN Y_bar VDD VDD pmos_sram w=243.0n l=20n nfin=9
-MGN0 g_sh B1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MGN1 g_sh B2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN1 Y_bar A1 nsM0 VSS nmos_sram w=81.0n l=20n nfin=3
+MP_inv Y Y_bar VDD VDD pmos_sram w=243.0n l=20n nfin=9
+MGN0 g_sh B VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MGN1 g_sh C VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN1 Y_bar A nsM0 VSS nmos_sram w=81.0n l=20n nfin=3
 MMN2 nsM0 g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=243.0n l=20n nfin=9
+MN_inv Y Y_bar VSS VSS nmos_sram w=243.0n l=20n nfin=9
 .ENDS
 
 
-.SUBCKT NOR3Bx4_1_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1*!B2)
-MGP1 npG0 B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MGP2 g_sh B2 npG0 VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 Y_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NOR3Bx4_1_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B*!C)
+MGP1 npG0 B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MGP2 g_sh C npG0 VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP1 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MGN0 g_sh B1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MGN1 g_sh B2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN1 Y_bar A1 nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MGN0 g_sh B VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MGN1 g_sh C VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN1 Y_bar A nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN2 nsM0 g_sh VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT NOR3Bx4_ASAP7_75t_SRAM A1 B1 B2 VDD VSS ZN
-*.PININFO A1:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1*!B2)
-MGP1 npG0 B1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MGP2 g_sh B2 npG0 VDD pmos_sram w=81.0n l=20n nfin=3
-MMP0 Y_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NOR3Bx4_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(A*!B*!C)
+MGP1 npG0 B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MGP2 g_sh C npG0 VDD pmos_sram w=81.0n l=20n nfin=3
+MMP0 Y_bar A VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP1 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MGN0 g_sh B1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MGN1 g_sh B2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN1 Y_bar A1 nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MGN0 g_sh B VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MGN1 g_sh C VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MMN1 Y_bar A nsM0 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN2 nsM0 g_sh VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
@@ -3071,35 +3071,35 @@ MM11 Y A net22 VDD pmos_sram w=486.00n l=20n nfin=18
 .ENDS
 
 
-.SUBCKT NOR3x4_ASAP7_75t_SRAM A1 A2 A3 VDD VSS ZN
-*.PININFO A1:I A2:I A3:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2*!A3)
-MGP2 npG0 A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MGP3 npG1 A2 npG0 VDD pmos_sram w=81.0n l=20n nfin=3
-MGP4 g_sh A3 npG1 VDD pmos_sram w=81.0n l=20n nfin=3
+.SUBCKT NOR3x4_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(!A*!B*!C)
+MGP2 npG0 A VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MGP3 npG1 B npG0 VDD pmos_sram w=81.0n l=20n nfin=3
+MGP4 g_sh C npG1 VDD pmos_sram w=81.0n l=20n nfin=3
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MGN0 g_sh A1 VSS VSS nmos_sram w=27.0n l=20n nfin=1
-MGN1 g_sh A2 VSS VSS nmos_sram w=27.0n l=20n nfin=1
-MGN2 g_sh A3 VSS VSS nmos_sram w=27.0n l=20n nfin=1
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MGN0 g_sh A VSS VSS nmos_sram w=27.0n l=20n nfin=1
+MGN1 g_sh B VSS VSS nmos_sram w=27.0n l=20n nfin=1
+MGN2 g_sh C VSS VSS nmos_sram w=27.0n l=20n nfin=1
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
-.SUBCKT NOR3x8_ASAP7_75t_SRAM A1 A2 A3 VDD VSS ZN
-*.PININFO A1:I A2:I A3:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2*!A3)
-MGP2 npG0 A1 VDD VDD pmos_sram w=135.0n l=20n nfin=5
-MGP3 npG1 A2 npG0 VDD pmos_sram w=135.0n l=20n nfin=5
-MGP4 g_sh A3 npG1 VDD pmos_sram w=135.0n l=20n nfin=5
+.SUBCKT NOR3x8_ASAP7_75t_SRAM A B C VDD VSS Y
+*.PININFO A:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(!A*!B*!C)
+MGP2 npG0 A VDD VDD pmos_sram w=135.0n l=20n nfin=5
+MGP3 npG1 B npG0 VDD pmos_sram w=135.0n l=20n nfin=5
+MGP4 g_sh C npG1 VDD pmos_sram w=135.0n l=20n nfin=5
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MP_inv ZN Y_bar VDD VDD pmos_sram w=648.0n l=20n nfin=24
-MGN0 g_sh A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MGN1 g_sh A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MGN2 g_sh A3 VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MP_inv Y Y_bar VDD VDD pmos_sram w=648.0n l=20n nfin=24
+MGN0 g_sh A VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MGN1 g_sh B VSS VSS nmos_sram w=54.0n l=20n nfin=2
+MGN2 g_sh C VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MN_inv ZN Y_bar VSS VSS nmos_sram w=648.0n l=20n nfin=24
+MN_inv Y Y_bar VSS VSS nmos_sram w=648.0n l=20n nfin=24
 .ENDS
 
 
@@ -3189,73 +3189,73 @@ MM42 net10 B net19 VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT OA21BBx1_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B)+(!A2*!B)
+.SUBCKT OA21BBx1_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!B)+(!A2*!B)
 MPbar0 A_bar A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP1 npM0 B VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP2 ZN A_bar npM0 VDD pmos_sram w=162.0n l=20n nfin=6
-MMP3 ZN A2 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MMP2 Y A_bar npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MMP3 Y A2 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
 MNbar0 A_bar A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN0 ZN B VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN A_bar nsM1 VSS nmos_sram w=162.0n l=20n nfin=6
+MMN0 Y B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y A_bar nsM1 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN3 nsM1 A2 VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT OA21BBx2_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B)+(!A2*!B)
+.SUBCKT OA21BBx2_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!B)+(!A2*!B)
 MPbar0 A_bar A1 VDD VDD pmos_sram w=162.0n l=20n nfin=6
 MMP1 npM0 B VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP2 ZN A_bar npM0 VDD pmos_sram w=324.0n l=20n nfin=12
-MMP3 ZN A2 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MMP2 Y A_bar npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MMP3 Y A2 npM0 VDD pmos_sram w=324.0n l=20n nfin=12
 MNbar0 A_bar A1 VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN0 ZN B VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN2 ZN A_bar nsM1 VSS nmos_sram w=297.0n l=20n nfin=11
+MMN0 Y B VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN2 Y A_bar nsM1 VSS nmos_sram w=297.0n l=20n nfin=11
 MMN3 nsM1 A2 VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
 
-.SUBCKT OA21Bx1_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B)+(A2*!B)
+.SUBCKT OA21Bx1_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!B)+(A2*!B)
 MGP1 npG0 A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MGP2 g_sh A2 npG0 VDD pmos_sram w=81.0n l=20n nfin=3
 MMP1 npM0 B VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP2 ZN g_sh npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MMP2 Y g_sh npM0 VDD pmos_sram w=162.0n l=20n nfin=6
 MGN0 g_sh A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MGN1 g_sh A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN0 ZN B VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN1 ZN g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN0 Y B VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN1 Y g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT OA21Bx2_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B)+(A2*!B)
+.SUBCKT OA21Bx2_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!B)+(A2*!B)
 MGP1 npG0 A1 VDD VDD pmos_sram w=135.0n l=20n nfin=5
 MGP2 g_sh A2 npG0 VDD pmos_sram w=135.0n l=20n nfin=5
 MMP1 npM0 B VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP2 ZN g_sh npM0 VDD pmos_sram w=324.0n l=20n nfin=12
+MMP2 Y g_sh npM0 VDD pmos_sram w=324.0n l=20n nfin=12
 MGN0 g_sh A1 VSS VSS nmos_sram w=81.0n l=20n nfin=3
 MGN1 g_sh A2 VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN0 ZN B VSS VSS nmos_sram w=162.0n l=20n nfin=6
-MMN1 ZN g_sh VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN0 Y B VSS VSS nmos_sram w=162.0n l=20n nfin=6
+MMN1 Y g_sh VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT OA21Bx4_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B)+(A2*!B)
+.SUBCKT OA21Bx4_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!B)+(A2*!B)
 MGP1 npG0 A1 VDD VDD pmos_sram w=243.0n l=20n nfin=9
 MGP2 g_sh A2 npG0 VDD pmos_sram w=243.0n l=20n nfin=9
 MMP1 npM0 B VDD VDD pmos_sram w=621.0n l=20n nfin=23
-MMP2 ZN g_sh npM0 VDD pmos_sram w=621.0n l=20n nfin=23
+MMP2 Y g_sh npM0 VDD pmos_sram w=621.0n l=20n nfin=23
 MGN0 g_sh A1 VSS VSS nmos_sram w=135.0n l=20n nfin=5
 MGN1 g_sh A2 VSS VSS nmos_sram w=135.0n l=20n nfin=5
-MMN0 ZN B VSS VSS nmos_sram w=324.0n l=20n nfin=12
-MMN1 ZN g_sh VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MMN0 Y B VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MMN1 Y g_sh VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
@@ -3305,18 +3305,18 @@ MM0 Y net014 VSS VSS nmos_sram w=162.00n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT OA22BBx1_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS ZN
-*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G ZN:O
-*.EQN ZN=(A1*!B1)+(A1*!B2)+(A2*!B1)+(A2*!B2)
+.SUBCKT OA22BBx1_ASAP7_75t_SRAM A1 A2 B1 B2 VDD VSS Y
+*.PININFO A1:I A2:I B1:I B2:I VDD:P VSS:G Y:O
+*.EQN Y=(A1*!B1)+(A1*!B2)+(A2*!B1)+(A2*!B2)
 MGP1 npG0 A1 VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MGP2 g_sh A2 npG0 VDD pmos_sram w=81.0n l=20n nfin=3
 MMP1 npM0 g_sh VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP2 ZN B1 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
-MMP3 ZN B2 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MMP2 Y B1 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
+MMP3 Y B2 npM0 VDD pmos_sram w=162.0n l=20n nfin=6
 MGN0 g_sh A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MGN1 g_sh A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
-MMN0 ZN g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MMN2 ZN B1 nsM1 VSS nmos_sram w=162.0n l=20n nfin=6
+MMN0 Y g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
+MMN2 Y B1 nsM1 VSS nmos_sram w=162.0n l=20n nfin=6
 MMN3 nsM1 B2 VSS VSS nmos_sram w=162.0n l=20n nfin=6
 .ENDS
 
@@ -3499,14 +3499,14 @@ MM6 net015 A3 net36 VDD pmos_sram w=81.0n l=20n nfin=3
 .ENDS
 
 
-.SUBCKT OAI211x1_ASAP7_75t_SRAM A1 A2 B C VDD VSS ZN
-*.PININFO A1:I A2:I B:I C:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2)+(!B)+(!C)
-MMP0 ZN B VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MMP1 ZN C VDD VDD pmos_sram w=81.0n l=20n nfin=3
+.SUBCKT OAI211x1_ASAP7_75t_SRAM A1 A2 B C VDD VSS Y
+*.PININFO A1:I A2:I B:I C:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!A2)+(!B)+(!C)
+MMP0 Y B VDD VDD pmos_sram w=81.0n l=20n nfin=3
+MMP1 Y C VDD VDD pmos_sram w=81.0n l=20n nfin=3
 MMP3 npM2 A2 VDD VDD pmos_sram w=162.0n l=20n nfin=6
-MMP4 ZN A1 npM2 VDD pmos_sram w=162.0n l=20n nfin=6
-MMN2 ZN B nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
+MMP4 Y A1 npM2 VDD pmos_sram w=162.0n l=20n nfin=6
+MMN2 Y B nsM0 VSS nmos_sram w=216.0n l=20n nfin=8
 MMN3 nsM0 C nsM1 VSS nmos_sram w=216.0n l=20n nfin=8
 MMN4 nsM1 A2 VSS VSS nmos_sram w=216.0n l=20n nfin=8
 MMN5 nsM1 A1 VSS VSS nmos_sram w=216.0n l=20n nfin=8
@@ -3535,31 +3535,31 @@ MM4 Y A1 net11 VSS nmos_sram w=162.00n l=20n nfin=6
 .ENDS
 
 
-.SUBCKT OAI21x2_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2)+(!B)
-MMP0 ZN B VDD VDD pmos_sram w=162.0n l=20n nfin=6
+.SUBCKT OAI21x2_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!A2)+(!B)
+MMP0 Y B VDD VDD pmos_sram w=162.0n l=20n nfin=6
 MMP2 npM1 A2 VDD VDD pmos_sram w=324.0n l=20n nfin=12
-MMP3 ZN A1 npM1 VDD pmos_sram w=324.0n l=20n nfin=12
-MMN1 ZN B nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
+MMP3 Y A1 npM1 VDD pmos_sram w=324.0n l=20n nfin=12
+MMN1 Y B nsM0 VSS nmos_sram w=297.0n l=20n nfin=11
 MMN2 nsM0 A2 VSS VSS nmos_sram w=297.0n l=20n nfin=11
 MMN3 nsM0 A1 VSS VSS nmos_sram w=297.0n l=20n nfin=11
 .ENDS
 
 
-.SUBCKT OAI21x4_ASAP7_75t_SRAM A1 A2 B VDD VSS ZN
-*.PININFO A1:I A2:I B:I VDD:P VSS:G ZN:O
-*.EQN ZN=(!A1*!A2)+(!B)
+.SUBCKT OAI21x4_ASAP7_75t_SRAM A1 A2 B VDD VSS Y
+*.PININFO A1:I A2:I B:I VDD:P VSS:G Y:O
+*.EQN Y=(!A1*!A2)+(!B)
 MGP0 g_sh B VDD VDD pmos_sram w=27.0n l=20n nfin=1
 MGP2 npG1 A2 VDD VDD pmos_sram w=54.0n l=20n nfin=2
 MGP3 g_sh A1 npG1 VDD pmos_sram w=54.0n l=20n nfin=2
 MMP0 Y_bar g_sh VDD VDD pmos_sram w=81.0n l=20n nfin=3
-MP_inv ZN Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
+MP_inv Y Y_bar VDD VDD pmos_sram w=324.0n l=20n nfin=12
 MGN1 g_sh B nsG0 VSS nmos_sram w=54.0n l=20n nfin=2
 MGN2 nsG0 A2 VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MGN3 nsG0 A1 VSS VSS nmos_sram w=54.0n l=20n nfin=2
 MMN0 Y_bar g_sh VSS VSS nmos_sram w=81.0n l=20n nfin=3
-MN_inv ZN Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
+MN_inv Y Y_bar VSS VSS nmos_sram w=324.0n l=20n nfin=12
 .ENDS
 
 
