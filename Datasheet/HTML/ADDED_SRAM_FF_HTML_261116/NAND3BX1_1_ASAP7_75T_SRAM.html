@@ -15,7 +15,7 @@
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4>
 <TR valign=middle><TH colspan=3><font size=3>INPUT</font></TH>
 <TH colspan=1><font size=3>OUTPUT</font></TH>
-<TR><Th>A1</Th><Th>B1</Th><Th>B2</Th><Th>ZN</Th></TR>
+<TR><Th>A</Th><Th>B</Th><Th>C</Th><Th>Y</Th></TR>
 <TR><Th><font size=2>x</font></Th><Th><font size=2>0</font></Th><Th><font size=2>x</font></Th><Th><font size=2>1</font></Th></TR>
 <TR><Th><font size=2>x</font></Th><Th><font size=2>1</font></Th><Th><font size=2>0</font></Th><Th><font size=2>1</font></Th></TR>
 <TR><Th><font size=2>0</font></Th><Th><font size=2>1</font></Th><Th><font size=2>1</font></Th><Th><font size=2>0</font></Th></TR>
@@ -38,10 +38,10 @@
 <TH colspan=1>Max Cap(ff) </TH>
 </TR>
 <TR>
-<TH>A1</TH>
-<TH>B1</TH>
-<TH>B2</TH>
-<TH>ZN</TH>
+<TH>A</TH>
+<TH>B</TH>
+<TH>C</TH>
+<TH>Y</TH>
 </TR>
 <TR><Th><font>NAND3Bx1_1_ASAP7_75t_SRAM</font></Th>
 <TD align=center>0.65973</TD>
@@ -67,25 +67,25 @@
 <FONT SIZE=+2><B>Delay Information</B></FONT>
 <BR>
 <BR>
-<FONT><B>Delay(ps) to ZN rising :</B></FONT>
+<FONT><B>Delay(ps) to Y rising :</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Timing Arc(Dir)</TH>
 <TH colspan=3>Delay(ps)</TH></TR><TR><TH>First</TH><TH>Mid</TH><TH>Last</TH></TR>
 <BR>
 <TR><TH rowspan=3>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>A1->ZN (RR)</font></Th>
+<Th><font>A->Y (RR)</font></Th>
 <TD align=center>16.63010</TD>
 <TD align=center>44.38280</TD>
 <TD align=center>207.58700</TD>
 </TR>
 <TR>
-<Th><font>B1->ZN (FR)</font></Th>
+<Th><font>B->Y (FR)</font></Th>
 <TD align=center>10.36840</TD>
 <TD align=center>39.98930</TD>
 <TD align=center>274.03600</TD>
 </TR>
 <TR>
-<Th><font>B2->ZN (FR)</font></Th>
+<Th><font>C->Y (FR)</font></Th>
 <TD align=center>11.77760</TD>
 <TD align=center>41.50650</TD>
 <TD align=center>275.99300</TD>
@@ -93,25 +93,25 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Delay(ps) to ZN falling :</B></FONT>
+<FONT><B>Delay(ps) to Y falling :</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Timing Arc(Dir)</TH>
 <TH colspan=3>Delay(ps)</TH></TR><TR><TH>First</TH><TH>Mid</TH><TH>Last</TH></TR>
 <BR>
 <TR><TH rowspan=3>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>A1->ZN (FF)</font></Th>
+<Th><font>A->Y (FF)</font></Th>
 <TD align=center>15.60220</TD>
 <TD align=center>41.45200</TD>
 <TD align=center>187.64300</TD>
 </TR>
 <TR>
-<Th><font>B1->ZN (RF)</font></Th>
+<Th><font>B->Y (RF)</font></Th>
 <TD align=center>10.58000</TD>
 <TD align=center>35.71220</TD>
 <TD align=center>237.43000</TD>
 </TR>
 <TR>
-<Th><font>B2->ZN (RF)</font></Th>
+<Th><font>C->Y (RF)</font></Th>
 <TD align=center>10.70020</TD>
 <TD align=center>34.24030</TD>
 <TD align=center>214.24100</TD>
@@ -123,42 +123,42 @@
 <FONT SIZE=+2><B>Power Information</B></FONT>
 <BR>
 <BR>
-<FONT><B>Internal switching power(fJ) to ZN rising :</B></FONT>
+<FONT><B>Internal switching power(fJ) to Y rising :</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Input</TH>
 <TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=6>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>A1</font></Th>
+<Th><font>A</font></Th>
 <TD align=center>0.32746</TD>
 <TD align=center>0.33387</TD>
 <TD align=center>0.36466</TD>
 </TR>
 <TR>
-<Th><font>A1</font></Th>
+<Th><font>A</font></Th>
 <TD align=center>0.46767</TD>
 <TD align=center>0.47809</TD>
 <TD align=center>0.51628</TD>
 </TR>
 <TR>
-<Th><font>B1</font></Th>
+<Th><font>B</font></Th>
 <TD align=center>0.30288</TD>
 <TD align=center>0.28857</TD>
 <TD align=center>0.27565</TD>
 </TR>
 <TR>
-<Th><font>B1</font></Th>
+<Th><font>B</font></Th>
 <TD align=center>-0.08044</TD>
 <TD align=center>-0.09065</TD>
 <TD align=center>-0.08614</TD>
 </TR>
 <TR>
-<Th><font>B2</font></Th>
+<Th><font>C</font></Th>
 <TD align=center>0.41285</TD>
 <TD align=center>0.39781</TD>
 <TD align=center>0.38639</TD>
 </TR>
 <TR>
-<Th><font>B2</font></Th>
+<Th><font>C</font></Th>
 <TD align=center>-0.10055</TD>
 <TD align=center>-0.11335</TD>
 <TD align=center>-0.10911</TD>
@@ -166,42 +166,42 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Internal switching power(fJ) to ZN falling :</B></FONT>
+<FONT><B>Internal switching power(fJ) to Y falling :</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH><TH rowspan=2>Input</TH>
 <TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=6>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>A1</font></Th>
+<Th><font>A</font></Th>
 <TD align=center>0.52129</TD>
 <TD align=center>0.51627</TD>
 <TD align=center>0.55292</TD>
 </TR>
 <TR>
-<Th><font>A1</font></Th>
+<Th><font>A</font></Th>
 <TD align=center>0.38045</TD>
 <TD align=center>0.37000</TD>
 <TD align=center>0.41818</TD>
 </TR>
 <TR>
-<Th><font>B1</font></Th>
+<Th><font>B</font></Th>
 <TD align=center>0.17846</TD>
 <TD align=center>0.17677</TD>
 <TD align=center>0.17990</TD>
 </TR>
 <TR>
-<Th><font>B1</font></Th>
+<Th><font>B</font></Th>
 <TD align=center>0.57131</TD>
 <TD align=center>0.56649</TD>
 <TD align=center>0.55214</TD>
 </TR>
 <TR>
-<Th><font>B2</font></Th>
+<Th><font>C</font></Th>
 <TD align=center>0.18433</TD>
 <TD align=center>0.18265</TD>
 <TD align=center>0.18543</TD>
 </TR>
 <TR>
-<Th><font>B2</font></Th>
+<Th><font>C</font></Th>
 <TD align=center>0.72895</TD>
 <TD align=center>0.72444</TD>
 <TD align=center>0.71731</TD>
@@ -209,31 +209,31 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for A1 rising (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for A rising (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>(B1 * !B2 * ZN)</font></Th>
+<Th><font>(B * !C * Y)</font></Th>
 <TD align=center>0.10663</TD>
 <TD align=center>0.09310</TD>
 <TD align=center>0.12383</TD>
 </TR>
 <TR>
-<Th><font>(B1 * !B2 * ZN)</font></Th>
+<Th><font>(B * !C * Y)</font></Th>
 <TD align=center>0.33890</TD>
 <TD align=center>0.32671</TD>
 <TD align=center>0.35700</TD>
 </TR>
 <TR>
-<Th><font>(!B1 * ZN)</font></Th>
+<Th><font>(!B * Y)</font></Th>
 <TD align=center>0.10744</TD>
 <TD align=center>0.09376</TD>
 <TD align=center>0.12447</TD>
 </TR>
 <TR>
-<Th><font>(!B1 * ZN)</font></Th>
+<Th><font>(!B * Y)</font></Th>
 <TD align=center>0.32956</TD>
 <TD align=center>0.31726</TD>
 <TD align=center>0.34782</TD>
@@ -241,31 +241,31 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for A1 falling (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for A falling (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=4>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>(B1 * !B2 * ZN)</font></Th>
+<Th><font>(B * !C * Y)</font></Th>
 <TD align=center>0.24399</TD>
 <TD align=center>0.23274</TD>
 <TD align=center>0.26343</TD>
 </TR>
 <TR>
-<Th><font>(B1 * !B2 * ZN)</font></Th>
+<Th><font>(B * !C * Y)</font></Th>
 <TD align=center>0.00872</TD>
 <TD align=center>-0.00380</TD>
 <TD align=center>0.02785</TD>
 </TR>
 <TR>
-<Th><font>(!B1 * ZN)</font></Th>
+<Th><font>(!B * Y)</font></Th>
 <TD align=center>0.23410</TD>
 <TD align=center>0.22261</TD>
 <TD align=center>0.25477</TD>
 </TR>
 <TR>
-<Th><font>(!B1 * ZN)</font></Th>
+<Th><font>(!B * Y)</font></Th>
 <TD align=center>0.01149</TD>
 <TD align=center>-0.00116</TD>
 <TD align=center>0.03094</TD>
@@ -273,43 +273,43 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for B1 rising (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for B rising (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=6>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>(A1 * B2 * ZN)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>-0.07115</TD>
 <TD align=center>-0.07163</TD>
 <TD align=center>-0.07176</TD>
 </TR>
 <TR>
-<Th><font>(A1 * B2 * ZN)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>0.20200</TD>
 <TD align=center>0.20319</TD>
 <TD align=center>0.20404</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B2 * ZN)</font></Th>
+<Th><font>(A * !C * Y)</font></Th>
 <TD align=center>-0.07341</TD>
 <TD align=center>-0.07373</TD>
 <TD align=center>-0.07376</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B2 * ZN)</font></Th>
+<Th><font>(A * !C * Y)</font></Th>
 <TD align=center>0.07649</TD>
 <TD align=center>0.07681</TD>
 <TD align=center>0.07682</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B2 * ZN)</font></Th>
+<Th><font>(!A * !C * Y)</font></Th>
 <TD align=center>-0.10374</TD>
 <TD align=center>-0.10440</TD>
 <TD align=center>-0.10494</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B2 * ZN)</font></Th>
+<Th><font>(!A * !C * Y)</font></Th>
 <TD align=center>0.04482</TD>
 <TD align=center>0.04474</TD>
 <TD align=center>0.04463</TD>
@@ -317,43 +317,43 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for B1 falling (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for B falling (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=6>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>(A1 * B2 * ZN)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>0.07523</TD>
 <TD align=center>0.07212</TD>
 <TD align=center>0.07193</TD>
 </TR>
 <TR>
-<Th><font>(A1 * B2 * ZN)</font></Th>
+<Th><font>(A * C * Y)</font></Th>
 <TD align=center>-0.19149</TD>
 <TD align=center>-0.20002</TD>
 <TD align=center>-0.20308</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B2 * ZN)</font></Th>
+<Th><font>(A * !C * Y)</font></Th>
 <TD align=center>0.07413</TD>
 <TD align=center>0.07458</TD>
 <TD align=center>0.07449</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B2 * ZN)</font></Th>
+<Th><font>(A * !C * Y)</font></Th>
 <TD align=center>-0.07649</TD>
 <TD align=center>-0.07681</TD>
 <TD align=center>-0.07682</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B2 * ZN)</font></Th>
+<Th><font>(!A * !C * Y)</font></Th>
 <TD align=center>0.10416</TD>
 <TD align=center>0.10496</TD>
 <TD align=center>0.10513</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B2 * ZN)</font></Th>
+<Th><font>(!A * !C * Y)</font></Th>
 <TD align=center>-0.04480</TD>
 <TD align=center>-0.04474</TD>
 <TD align=center>-0.04459</TD>
@@ -361,43 +361,43 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for B2 rising (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for C rising (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=6>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>(A1 * B1 * ZN)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>-0.05563</TD>
 <TD align=center>-0.05594</TD>
 <TD align=center>-0.05594</TD>
 </TR>
 <TR>
-<Th><font>(A1 * B1 * ZN)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>0.20374</TD>
 <TD align=center>0.20449</TD>
 <TD align=center>0.20509</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B1 * ZN)</font></Th>
+<Th><font>(A * !B * Y)</font></Th>
 <TD align=center>-0.05518</TD>
 <TD align=center>-0.05546</TD>
 <TD align=center>-0.05559</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B1 * ZN)</font></Th>
+<Th><font>(A * !B * Y)</font></Th>
 <TD align=center>0.20427</TD>
 <TD align=center>0.20484</TD>
 <TD align=center>0.20521</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B1 * ZN)</font></Th>
+<Th><font>(!A * !B * Y)</font></Th>
 <TD align=center>-0.05811</TD>
 <TD align=center>-0.05846</TD>
 <TD align=center>-0.05848</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B1 * ZN)</font></Th>
+<Th><font>(!A * !B * Y)</font></Th>
 <TD align=center>0.20178</TD>
 <TD align=center>0.20255</TD>
 <TD align=center>0.20258</TD>
@@ -405,43 +405,43 @@
 </TABLE>
 <BR>
 <BR>
-<FONT><B>Passive power(fJ) for B2 falling (conditional):</B></FONT>
+<FONT><B>Passive power(fJ) for C falling (conditional):</B></FONT>
 <TABLE BORDER=1 CELLSPACING=0 CELLPADDING=4 WIDTH=100%>
 <TR valign=middle><TH rowspan=2>Cell Name</TH>
 <TH rowspan=2>When</TH>
 </TH><TH colspan=3>Power(fJ)</TH></TR><TR><TH>first</TH><TH>mid</TH><TH>last</TH></TR>
 <TR><TH rowspan=6>NAND3Bx1_1_ASAP7_75t_SRAM</TH>
-<Th><font>(A1 * B1 * ZN)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>0.05598</TD>
 <TD align=center>0.05598</TD>
 <TD align=center>0.05594</TD>
 </TR>
 <TR>
-<Th><font>(A1 * B1 * ZN)</font></Th>
+<Th><font>(A * B * Y)</font></Th>
 <TD align=center>-0.18172</TD>
 <TD align=center>-0.19747</TD>
 <TD align=center>-0.20314</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B1 * ZN)</font></Th>
+<Th><font>(A * !B * Y)</font></Th>
 <TD align=center>0.05518</TD>
 <TD align=center>0.05546</TD>
 <TD align=center>0.05559</TD>
 </TR>
 <TR>
-<Th><font>(A1 * !B1 * ZN)</font></Th>
+<Th><font>(A * !B * Y)</font></Th>
 <TD align=center>-0.19101</TD>
 <TD align=center>-0.19941</TD>
 <TD align=center>-0.20349</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B1 * ZN)</font></Th>
+<Th><font>(!A * !B * Y)</font></Th>
 <TD align=center>0.05923</TD>
 <TD align=center>0.05857</TD>
 <TD align=center>0.05855</TD>
 </TR>
 <TR>
-<Th><font>(!A1 * !B1 * ZN)</font></Th>
+<Th><font>(!A * !B * Y)</font></Th>
 <TD align=center>-0.18719</TD>
 <TD align=center>-0.19646</TD>
 <TD align=center>-0.20073</TD>
